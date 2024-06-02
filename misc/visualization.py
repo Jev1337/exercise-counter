@@ -95,7 +95,7 @@ def draw_points_front(image, points, exercise_type,  confidence_threshold=0.5):
             image = cv2.circle(image, (int(pt[1]), int(
                 pt[0])), circle_size, tuple(colors[i % len(colors)]), -1)
             font = cv2.FONT_HERSHEY_SIMPLEX
-            org = (pt[1], pt[0])
+            org = (int(pt[1]), int(pt[0]))
             fontScale = 1
             color = (255, 255, 255)
             thickness = 2
